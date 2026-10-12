@@ -43,7 +43,7 @@ disable_tools = ["ruby"]
 
 # mise handles Python and pre-commit. Ruby is disabled above.
 mise install
-mise x -- python -m pip install reuse
+mise x -- python -m pip install 'reuse[charset-normalizer]'
 
 # pip installs scripts (like reuse.exe) to Python's Scripts directory,
 # which mise does not add to PATH.

@@ -12,7 +12,7 @@ if ! command -v mise >/dev/null 2>&1; then
 fi
 
 mise install
-mise x -- pip install reuse
+mise x -- pip install 'reuse[charset-normalizer]'
 mise x -- gem install bundler:4.0.3
 
 if [ "${CI:-}" = "true" ]; then
